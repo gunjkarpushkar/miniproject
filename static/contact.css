@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    overflow-x: hidden;
+    /* background-color: #e2c7c7; */
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 5vw;
+}
+p {
+    color: #666;
+    line-height: 1.6;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 600px; */
+    width: 40vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    /* border: 2px solid black; */
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2vw;
+}
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    margin-bottom: 5px;
+    color: #333;
+}
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-group textarea {
+    resize: vertical;
+}
+.form-group button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3vw;
+    height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1vw;
+ 
+    align-self: center;
+}
+.form-group button:hover {
+    background-color: #555;
+}
+.form-group-map{
+    line-height: 10vw;
+    
+}
+.form-group-map iframe{
+    width: 100%;
+}
+.nav{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 20px; */
+    height: 10vh;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(212, 207, 207);
+    width: 100%;
+    
+}
+
+    .nav__name{
+        cursor: pointer;
+       font-family: "Protest Riot", sans-serif;
+       font-weight: 50;
+        font-style: normal;
+        font-size: 1.5vw;    
+    }  
+
+.nav__link a{
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    font-size: 1.5vw;
+}
+.nav__social span{
+    font-weight: 1000;
+    color: #333;
+}
+.nav__social{
+    display: flex;
+    gap: 5vw;
+    /* padding-right: 20px; */
+    font-size: 1.5vw;
+}
+.nav__social button{
+  height: 5vh;
+  width: 5vw;
+  border: none;
+  
+}
+.nav__social i:hover{
+  cursor: pointer;
+
+}
+.nav__social:hover{
+    cursor: pointer;
+}
+.nav__bars{
+    display: none;
+}
+/* .nav__fullscreen-view{
+    background-color: #2B3644;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 100000;
+    width: 100vw;
+    position: fixed;
+    row-gap: 20px;
+    display: none;
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.nav__fullscreen-view-cross{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+} */
+
+
+/* ///////////////////// fotter /////////////////// */
+/*  */

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 1vw 2vw;
+    overflow-x: hidden;
+    font-family:'Times New Roman', Times, serif !important;
+}
+.nav{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 20px; */
+    height: 10vh;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(212, 207, 207);
+    width: 100%;
+    
+}
+.nav__name{
+    cursor: pointer;
+   font-family: "Protest Riot", sans-serif;
+   font-weight: 100;
+    font-style: normal;
+    font-size: 2.5vw;    
+}
+.nav__link a{
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    font-size: 1.5vw;
+}
+.nav__social span{
+    font-weight: bolder;
+}
+.nav__social{
+    display: flex;
+    gap: 5vw;
+    /* padding-right: 20px; */
+    font-size: 1.5vw;
+}
+.nav__social a{
+  text-decoration: none;
+  border: 1px solid black;
+  width: 4vw;
+  height: 8vh;
+  padding-top: 0.7vw;
+ 
+  border-radius: 50%;
+  /* padding-top: 0.2vw; */
+  font-size: 1.5vw;
+text-align: center;
+color: white;
+
+}
+.nav__social .Signin{
+  color: black;
+
+  
+}
+.nav__social .Signup{
+  color: white;
+  background-color: black;
+}
+
+.nav__social button{
+  height: 5vh;
+  width: 5vw;
+  border: none;
+  
+}
+.nav__social i:hover{
+  cursor: pointer;
+
+}
+.nav__social:hover{
+    cursor: pointer;
+}
+.nav__bars{
+    display: none;
+}
+/* .nav__fullscreen-view{
+    background-color: #2B3644;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 100000;
+    width: 100vw;
+    position: fixed;
+    row-gap: 20px;
+    display: none;
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.nav__fullscreen-view-cross{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+} */
+.text-blue{
+    
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: italic;
+ }
+
+.text-blue span{
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
