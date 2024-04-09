@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genre</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#aaa4bc" >
+    <nav class="navbar" style="background-color:currentColor">
+        <a class="navbar-brand" style="color: white; font-size: 30px">Book Recommendation System</a>
+        <ul class="nav navbar-nav ml-auto">
+            <li><a href="/" style="color: white">Home</a></li>
+            <li><a href="/categories" style="color: white">categories</a></li>
+            <li><a style="color: white">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <u><h1 class="text-blue" style="font-size: 35px;margin-top: 15px">Recommended Genre</h1></u>
+                <form action="/recommend_categories" method="post" style="margin-top:20px">
+                    <input name="categories_name" type="text" class="form-control"><br>
+                    <input type="submit" class="btn btn-lg btn-warning">
+                </form>
+                
+            </div>
+
+            {% if data %}
+
+                {% for i in data %}
+                    <div class="col-md-3" style="margin-top:50px">
+                        <div class="card" style="font-family: emoji;flex: 0 0 auto;max-height:max-content;font-size:10px;padding: 1 rem">
+                            <div class="card-body">
+                                <img class="card-img-top" src="{{i[2]}}">
+                                <h4 class="text-blue">{{i[0]}}</h4>
+                                <h5 class="text-blue">{{i[1]}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            {% endif %}
+
+
+        </div>
+    </div>
+</body>
+</html>

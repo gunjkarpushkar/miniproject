@@ -8,12 +8,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color:#aaa4bc">
+<body style="background-color:#56448b">
     <nav class="navbar" style="background-color:currentColor">
         <a class="navbar-brand" style="color: white; font-size: 30px">Book Recommendation System</a>
         <ul class="nav navbar-nav ml-auto">
             <li><a href="/" style="color: white">Home</a></li>
             <li><a href="/recommendation" style="color: white">Recommendation</a></li>
+            <li><a href="/categories" style="color: white">categories</a></li>
             <li><a style="color: white">Contact Us</a></li>
         </ul>
     </nav>
@@ -21,7 +22,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <u><h1 class="text-blue" style="font-size: 45px;margin-top: 10px;margin-left:410px">Top 100 Books</h1></u>
+                <u><h1 class="text-blue" style="font-size: 45px;margin-top: 10px;margin-left:410px">Top 50 Books</h1></u>
             </div>
 
             {% for i in range(book_name|length) %}
@@ -34,6 +35,7 @@
                         <h5 class="text-blue">{{publisher[i] }}</h5>
                         <h5 class="text-blue">Votes:{{votes[i] }}</h5>
                         <h5 class="text-blue">Rating:{{rating[i] }}</h5>
+                        <h6 class="text-blue">{{categories[i] }}</h6>
                     </div>
                 </div>
             </div>
