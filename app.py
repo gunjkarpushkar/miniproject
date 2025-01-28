@@ -36,6 +36,14 @@ def recommendation_ui():
 def contact():
     return render_template("contact.html")
 
+
+@app.route('/login')
+def logout():
+    # Clear the user's session or authentication token
+    # Redirect the user to the login page
+    return render_template("signup.html")
+
+
 @app.route("/signup",methods=["POST","GET"])
 def getsignupFormDetails():
        

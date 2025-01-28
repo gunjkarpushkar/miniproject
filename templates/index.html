@@ -124,9 +124,10 @@
             <a href="/categories">Categories</a>
             <a href="/contact">Contact Us</a>
          </div>
+        
          <div class="nav__social">
             <a href="/signup" class="Signin"><i class="fa-solid fa-user"></i></a>
-           
+            <a href="#" class="Logout" onclick="logoutAlert()">Logout</a>
          </div>
          <div class="nav__bars">
             <i onclick="closeFooterNav()" class="fa-solid fa-bars"></i>
@@ -161,6 +162,9 @@
       {% endfor %}
   </div>
 </section>
+<div class="scroll-to-top">
+    <img src="../static/go to top.svg" height="50px" alt="" onclick="scrollToTop()"/>
+  </div>
 <script>
     $(document).ready(function(){
       var maxHeight = 0;
@@ -169,6 +173,17 @@
       });
       $(".card-equal-height").height(maxHeight);
     });
+
+    function logoutAlert() {
+        alert("You have been logged out!");
+        window.location.href = "/login"; // Redirect to login page
+        // or
+        // $.ajax({ type: "POST", url: "/logout", data: {} }); // Send logout request to server
+    }
+    function scrollToTop() {
+        $(window).scrollTop(0);
+    }
   </script>
+ 
 </body>
 </html>

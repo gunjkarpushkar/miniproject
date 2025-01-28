@@ -50,9 +50,9 @@ body{
   border: 1px solid black;
   width: 4vw;
   height: 8vh;
-  padding-top: 0.7vw;
  
-  border-radius: 50%;
+ 
+
   /* padding-top: 0.2vw; */
   font-size: 1.5vw;
 text-align: center;
@@ -61,7 +61,8 @@ color: white;
 }
 .nav__social .Signin{
   color: black;
-
+  border-radius: 50%;
+  padding-top: 0.7vw;
   
 }
 .nav__social .Signup{
@@ -84,6 +85,14 @@ color: white;
 }
 .nav__bars{
     display: none;
+}
+.nav__social .Logout{
+    height: 5vh;
+    width: 5vw;
+    color: black;
+    margin-top: 1vw;
+    border-radius: 0.5vw;
+    
 }
 /* .nav__fullscreen-view{
     background-color: #2B3644;
@@ -119,4 +128,12 @@ color: white;
     font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
+}
+.scroll-to-top img{
+   
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor:pointer;
+
 }

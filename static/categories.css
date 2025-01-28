@@ -128,7 +128,7 @@ color: white;
 .form-label{
     font-size: 3vw;
 }
-*:focus {
+/* *:focus {
     outline: none;
     caret-color: transparent;
-}
+} */
